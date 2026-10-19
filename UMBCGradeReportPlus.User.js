@@ -104,14 +104,19 @@
     summaryLine.style.borderRadius = '4px';
     summaryLine.style.fontFamily = 'sans-serif';
     summaryLine.style.fontSize = '14px';
+    summaryLine.style.display = 'flex';
+    summaryLine.style.flexWrap = 'wrap';
+    summaryLine.style.gap = '10px 16px';
 
     summaryLine.innerHTML = `
-        <strong>Mean:</strong> ${mean} &nbsp;|&nbsp;
-        <strong>Median:</strong> ${median} &nbsp;|&nbsp;
-        <strong>Mode:</strong> ${modes.join(', ')} (${maxUsers} users) &nbsp;|&nbsp;
-        <strong>Lowest:</strong> ${lowest} &nbsp;|&nbsp;
-        <strong>Highest:</strong> ${highest} &nbsp;|&nbsp;
-        <strong>Rank:</strong> <span style="color: #b30000; font-weight: bold;">${rankText}</span>
+        <span><strong>Mean:</strong> ${mean}</span>
+        <span><strong>Median:</strong> ${median}</span>
+        <span><strong>Mode:</strong> ${modes.join(', ')} (${maxUsers} users)</span>
+        <span><strong>Lowest:</strong> ${lowest}</span>
+        <span><strong>Highest:</strong> ${highest}</span>
+        <span><strong>Your Rank:</strong> 
+            <span style="color: #b30000; font-weight: bold;">${rankText}</span>
+        </span>
     `;
 
     table.parentElement.appendChild(summaryLine);
