@@ -89,9 +89,9 @@
         const rank = higherCount + 1;
 
         if (tiedCount > 1) {
-            rankText = `${rank} out of ${totalUsers} (tied with ${tiedCount - 1} other${tiedCount - 1 === 1 ? '' : 's'}, ranks ${rank}–${higherCount + tiedCount})`;
+            rankText = `${rank} / ${totalUsers} (tied with ${tiedCount - 1} other${tiedCount - 1 === 1 ? '' : 's'}, ranks ${rank}–${higherCount + tiedCount})`;
         } else {
-            rankText = `${rank} out of ${totalUsers}`;
+            rankText = `${rank} / ${totalUsers}`;
         }
     }
 
