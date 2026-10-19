@@ -1,10 +1,18 @@
 // ==UserScript==
 // @name         UMBC Grade Report+
-// @namespace    https://github.com/ba8t
-// @version      0.1
-// @description  Enhances the UMBC Grade Report page with additional features.
+// @namespace    https://github.com/ba8t/UMBC-Grade-Report-Plus/
+// @homepageURL  https://github.com/ba8t/UMBC-Grade-Report-Plus/
+// @version      0.1.1
+// @description  Enhances the UMBC Grade Report page with additional Information like Mean, Median, Rank, and More.
 // @author       ba8t
 // @match        *://my3.my.umbc.edu/apps/bb/activity/*
+// @compatible   chrome
+// @compatible   firefox
+// @compatible   opera
+// @compatible   safari
+// @compatible   edge
+// @downloadURL  https://raw.githubusercontent.com/ba8t/UMBC-Grade-Report-Plus/refs/heads/main/UMBCGradeReportPlus.User.js
+// @updateURL    https://raw.githubusercontent.com/ba8t/UMBC-Grade-Report-Plus/refs/heads/main/UMBCGradeReportPlus.User.js
 // @grant        none
 // ==/UserScript==
 
